@@ -1,0 +1,14 @@
+https://www.liquidweb.com/,52.0,3.7 s,6.7 s,4.6 s,4.6 s,3.7 s,6.5 s,230 ms,680 ms,0.04
+https://www.nexcess.net/,46.0,6.2 s,8.5 s,6.5 s,6.2 s,6.2 s,7.3 s,180 ms,230 ms,0.039
+2021-02-02 16:01:32.256062https://www.liquidweb.com/,50.0,3.4 s,6.6 s,4.5 s,4.2 s,3.4 s,6.5 s,240 ms,890 ms,0.04
+2021-02-02 16:01:48.155765https://www.nexcess.net/,27.0,5.5 s,9.9 s,5.6 s,5.5 s,5.5 s,8.7 s,420 ms,1,280 ms,0.087
+2021-02-02 16:02:45.128500,https://www.liquidweb.com/,45.0,3.5 s,6.8 s,5.6 s,4.0 s,3.5 s,6.4 s,420 ms,900 ms,0.04
+2021-02-02 16:02:55.029387,https://www.nexcess.net/,66.0,4.1 s,8.1 s,4.2 s,4.1 s,4.1 s,7.0 s,130 ms,210 ms,0.087
+16:06:16,https://www.liquidweb.com/,65.0,3.1 s,6.5 s,3.5 s,3.6 s,3.1 s,6.1 s,430 ms,650 ms,0.04
+16:06:26,https://www.nexcess.net/,70.0,3.6 s,8.1 s,3.8 s,3.7 s,3.6 s,7.0 s,130 ms,280 ms,0.068
+2021-02-02 16:07:47,https://www.liquidweb.com/,54.0,3.2 s,6.8 s,4.3 s,4.2 s,3.2 s,6.6 s,260 ms,790 ms,0.024
+2021-02-02 16:07:58,https://www.nexcess.net/,52.0,5.5 s,8.0 s,5.6 s,5.5 s,5.5 s,7.0 s,130 ms,120 ms,0.039
+<KeyError> & <NameError> Failing because of nonexistant Key ~ https://www.liquidweb.com.
+<KeyError> & <NameError> Failing because of nonexistant Key ~ https://www.nexcess.net.
+2021-02-02 16:11:21,https://www.liquidweb.com/,52.0,3.5 s,7.0 s,4.9 s,3.8 s,3.5 s,6.8 s,240 ms,710 ms,0.024
+2021-02-02 16:11:31,https://www.nexcess.net/,54.0,4.1 s,8.3 s,5.6 s,4.1 s,4.1 s,7.2 s,150 ms,400 ms,0.087
