@@ -59,11 +59,20 @@ with open('pagespeed.txt') as pagespeedurls:
             urlcls = final['lighthouseResult']['audits']['cumulative-layout-shift']['displayValue']
             CLS = f'Cumulative Layout Shift ~ {str(urlcls)}'
             CLS2 = str(urlcls)
+            urlofcp = final['originLoadingExperience']['metrics']['FIRST_CONTENTFUL_PAINT_MS']['percentile']
+            OFCP = f'Origin First Contentful Paint ~ {str(urlofcp / 1000)}'
+            OFCP2 = str(urlofcp / 1000)
+            urlolcp = final['originLoadingExperience']['metrics']['LARGEST_CONTENTFUL_PAINT_MS']['percentile']
+            OLCP = f'Origin Largest Contentful Paint ~ {str(urlolcp / 1000)}'
+            OLCP2 = str(urlolcp / 1000)
+            urlofid = final['originLoadingExperience']['metrics']['FIRST_INPUT_DELAY_MS']['percentile']
+            OFID = f'Origin First Input Delay ~ {str(urlofid / 1000)}'
+            OFID2 = str(urlofid / 1000)
         except KeyError:
             print(f'<KeyError> One or more keys not found {line}.')
         
         try:
-            row = f'{DATE},{ID2},{PSI2},{FCP2},{TTI2},{LCP2},{SI2},{FMP2},{FCI2},{EIL2},{TBT2},{CLS2}\n'
+            row = f'{DATE},{ID2},{PSI2},{FCP2},{TTI2},{LCP2},{SI2},{FMP2},{FCI2},{EIL2},{TBT2},{CLS2},{OFCP2},{OLCP2},{OFID2}\n'
             file.write(row)            
         except NameError:
             print(f'<NameError> Failing because of KeyError {line}.')
@@ -82,6 +91,9 @@ with open('pagespeed.txt') as pagespeedurls:
             print(EIL)
             print(TBT)
             print(CLS)
+            print(OFCP)
+            print(OLCP)
+            print(OFID)
         except NameError:
             print(f'<NameError> Failing because of KeyError {line}.')
 
