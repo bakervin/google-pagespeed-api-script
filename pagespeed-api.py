@@ -68,11 +68,14 @@ with open('pagespeed.txt') as pagespeedurls:
             urlofid = final['originLoadingExperience']['metrics']['FIRST_INPUT_DELAY_MS']['percentile']
             OFID = f'Origin First Input Delay ~ {str(urlofid / 1000)}'
             OFID2 = str(urlofid / 1000)
+            urlocls = final['originLoadingExperience']['metrics']['CUMULATIVE_LAYOUT_SHIFT_SCORE']['percentile']
+            OCLS = f'Origin Cumulative Layout Shift ~ {str(urlocls / 1000)}'
+            OCLS2 = str(urlocls / 1000)
         except KeyError:
             print(f'<KeyError> One or more keys not found {line}.')
         
         try:
-            row = f'{DATE},{ID2},{PSI2},{FCP2},{TTI2},{LCP2},{SI2},{FMP2},{FCI2},{EIL2},{TBT2},{CLS2},{OFCP2},{OLCP2},{OFID2}\n'
+            row = f'{DATE},{ID2},{PSI2},{FCP2},{TTI2},{LCP2},{SI2},{FMP2},{FCI2},{EIL2},{TBT2},{CLS2},{OFCP2},{OLCP2},{OFID2},{OCLS2}\n'
             file.write(row)            
         except NameError:
             print(f'<NameError> Failing because of KeyError {line}.')
@@ -94,6 +97,7 @@ with open('pagespeed.txt') as pagespeedurls:
             print(OFCP)
             print(OLCP)
             print(OFID)
+            print(OCLS)
         except NameError:
             print(f'<NameError> Failing because of KeyError {line}.')
 
